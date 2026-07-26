@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Алексей Волков — мандалы и интерьерные картины</title>
+  <meta name="description" content="Авторские интерьерные картины Алексея Волкова: мандалы, сакральная геометрия, декоративная живопись акрилом на оргалите. Работы на заказ и для частных интерьеров." />
+  <meta property="og:title" content="Алексей Волков — мандалы и интерьерные картины" />
+  <meta property="og:description" content="Авторские картины с элементами сакральной геометрии, мандалы и декоративная живопись для интерьера." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+      --text-hero: clamp(3rem, 0.5rem + 7vw, 7rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+      --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem;
+      --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --radius-sm: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem; --radius-xl: 1rem; --radius-full: 9999px;
+      --color-bg: #f5f1ea;
+      --color-surface: #fbf8f3;
+      --color-surface-2: #f2ede4;
+      --color-surface-offset: #e8e0d3;
+      --color-border: rgba(43, 34, 20, 0.12);
+      --color-text: #241d16;
+      --color-text-muted: #675f57;
+      --color-text-faint: #93887b;
+      --color-text-inverse: #f7f3ed;
+      --color-primary: #9f6f18;
+      --color-primary-hover: #835b12;
+      --color-primary-highlight: rgba(159, 111, 24, 0.12);
+      --shadow-sm: 0 2px 10px rgba(32, 21, 12, 0.05);
+      --shadow-md: 0 10px 30px rgba(32, 21, 12, 0.12);
+      --shadow-lg: 0 24px 60px rgba(32, 21, 12, 0.18);
+      --content-default: 1180px;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Inter', Arial, sans-serif;
+    }
+    [data-theme="dark"] {
+      --color-bg: #12110f;
+      --color-surface: #171512;
+      --color-surface-2: #1c1915;
+      --color-surface-offset: #24211c;
+      --color-border: rgba(240, 225, 204, 0.12);
+      --color-text: #f0e7db;
+      --color-text-muted: #c0b3a2;
+      --color-text-faint: #887c6e;
+      --color-text-inverse: #161311;
+      --color-primary: #d4a64d;
+      --color-primary-hover: #e4bb68;
+      --color-primary-highlight: rgba(212, 166, 77, 0.12);
+      --shadow-sm: 0 2px 10px rgba(0,0,0,0.22);
+      --shadow-md: 0 10px 30px rgba(0,0,0,0.32);
+      --shadow-lg: 0 24px 60px rgba(0,0,0,0.42);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+    body{font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;background:var(--color-bg);color:var(--color-text);overflow-x:hidden}
+    h1,h2,h3,h4,p,span,a,strong,small,div{overflow-wrap:break-word;word-break:break-word;hyphens:auto}
+    img,svg{display:block;max-width:100%;height:auto}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+    :focus-visible{outline:2px solid var(--color-primary);outline-offset:3px}
+    .container{width:min(calc(100% - 2rem),var(--content-default));margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto}.skip-link:focus{left:1rem;top:1rem;background:var(--color-primary);color:var(--color-text-inverse);padding:.75rem 1rem;border-radius:var(--radius-md);z-index:100}
+    .site-header{position:fixed;top:0;left:0;right:0;z-index:50;background:color-mix(in srgb,var(--color-bg) 94%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--color-border);transform:translateY(0);transition:transform .35s ease}
+    .site-header.header-hidden{transform:translateY(-100%)}
+    main{padding-top:var(--header-h,84px)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:var(--space-3)}
+    .brand-mark{width:46px;height:46px;padding:7px;border-radius:50%;background:linear-gradient(135deg,var(--color-primary-highlight),transparent);border:1px solid var(--color-border)}
+    .brand-name{font-family:var(--font-display);font-size:var(--text-lg);letter-spacing:.02em}
+    .brand-sub{font-size:var(--text-xs);color:var(--color-text-muted);text-transform:uppercase;letter-spacing:.16em}
+    .nav{display:none;gap:var(--space-4);font-size:var(--text-sm)}
+    .header-actions{display:flex;align-items:center;gap:var(--space-2)}
+    .lang-switch,.theme-toggle{min-width:44px;min-height:44px;border:1px solid var(--color-border);border-radius:var(--radius-full);padding:.6rem .9rem;background:var(--color-surface)}
+    .lang-switch{display:flex;gap:.45rem;align-items:center;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.12em}
+    .lang-switch span.active{color:var(--color-primary)}
+    .hero{position:relative;overflow:hidden;padding:clamp(5rem,9vw,8rem) 0 clamp(4rem,7vw,6rem)}
+    .hero::before{content:"";position:absolute;inset:0;background:
+      radial-gradient(circle at 15% 20%, rgba(129,83,12,.18), transparent 30%),
+      radial-gradient(circle at 85% 25%, rgba(55,83,118,.18), transparent 26%),
+      linear-gradient(180deg, transparent, rgba(0,0,0,.12));pointer-events:none}
+    .hero-grid{position:relative;display:grid;gap:var(--space-8);align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:.6rem;padding:.35rem .8rem;border:1px solid var(--color-border);border-radius:var(--radius-full);background:var(--color-surface);color:var(--color-text-muted);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.14em}
+    .hero h1{font-family:var(--font-display);font-size:var(--text-hero);line-height:.92;max-width:11ch;margin-top:var(--space-4)}
+    .hero p{margin-top:var(--space-5);max-width:65ch;color:var(--color-text-muted)}
+    .cta-row{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-6)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.9rem 1.25rem;border-radius:var(--radius-full);border:1px solid transparent;font-size:var(--text-sm);font-weight:600}
+    .btn-primary{background:var(--color-primary);color:var(--color-text-inverse)}
+    .btn-primary:hover{background:var(--color-primary-hover)}
+    .btn-secondary{border-color:var(--color-border);background:var(--color-surface)}
+    .hero-card{background:linear-gradient(180deg,var(--color-surface),var(--color-surface-2));border:1px solid var(--color-border);border-radius:calc(var(--radius-xl) + 8px);padding:var(--space-4);box-shadow:var(--shadow-lg)}
+    .hero-art{aspect-ratio:4/5;border-radius:calc(var(--radius-xl) + 2px);overflow:hidden;background:#0e0d0b;position:relative}
+    .hero-art img{width:100%;height:100%;object-fit:cover}
+    .hero-note{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3);margin-top:var(--space-3)}
+    .hero-stat{padding:var(--space-3);border-radius:var(--radius-lg);background:var(--color-bg);border:1px solid var(--color-border)}
+    .hero-stat strong{display:block;font-family:var(--font-display);font-size:var(--text-xl);line-height:1}
+    .hero-stat span{display:block;margin-top:.3rem;color:var(--color-text-muted);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.1em}
+    .hero-grid > *,.about-grid > *,.details-grid > *,.contact-grid > *,.hero-note > *,.header-inner > *{min-width:0}
+    section{padding:clamp(3.5rem,7vw,6rem) 0}
+    .section-head{display:grid;gap:var(--space-3);margin-bottom:var(--space-8)}
+    .section-kicker{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.16em;color:var(--color-primary)}
+    .section-title{font-family:var(--font-display);font-size:var(--text-2xl);line-height:1}
+    .section-copy{color:var(--color-text-muted);max-width:68ch}
+    .about-grid{display:grid;gap:var(--space-6)}
+    .about-card,.detail-card,.contact-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:calc(var(--radius-xl) + 4px);padding:clamp(1.2rem,2vw,2rem);box-shadow:var(--shadow-sm)}
+    .about-card p + p{margin-top:var(--space-4)}
+    .details-grid{display:grid;gap:var(--space-4);margin-top:var(--space-5)}
+    .detail-card small{display:block;color:var(--color-text-faint);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.4rem}
+    .detail-card strong{font-size:var(--text-lg);font-family:var(--font-display);font-weight:600}
+    .timeline{display:grid;gap:var(--space-4)}
+    .timeline-item{padding:var(--space-5);border-radius:var(--radius-xl);background:linear-gradient(180deg,var(--color-surface),var(--color-surface-2));border:1px solid var(--color-border);display:grid;gap:.35rem}
+    .timeline-item span{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.12em;color:var(--color-primary)}
+    .timeline-item h3{font-size:var(--text-lg);font-weight:600}
+    .timeline-item p{color:var(--color-text-muted)}
+    .gallery-intro{display:flex;justify-content:space-between;gap:var(--space-4);align-items:end;flex-wrap:wrap;margin-bottom:var(--space-6)}
+    .pill{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .85rem;border-radius:var(--radius-full);background:var(--color-primary-highlight);color:var(--color-primary);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.12em}
+    #works .container > div:last-child{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5)}
+    @media (max-width:899px){
+      #works .container > div:last-child{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      #works .container > div:last-child{grid-template-columns:1fr}
+    }
+    .gallery-item{position:relative;border-radius:calc(var(--radius-xl) + 6px);overflow:hidden;border:1px solid var(--color-border);background:var(--color-surface);box-shadow:var(--shadow-sm);aspect-ratio:4/5;cursor:zoom-in;transition:box-shadow .25s ease,transform .25s ease}
+    .gallery-item:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+    .gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+    .gallery-item:hover img{transform:scale(1.045)}
+    .gallery-caption{position:absolute;left:0;right:0;bottom:0;padding:var(--space-4);background:linear-gradient(180deg,transparent,rgba(0,0,0,.78));color:#f7efe6;opacity:.88;transition:opacity .24s ease}
+    .gallery-item:hover .gallery-caption,.gallery-item:focus-within .gallery-caption{opacity:1}
+    .gallery-caption strong{display:block;font-size:var(--text-sm)}
+    .gallery-caption span{display:block;font-size:var(--text-xs);opacity:.82;margin-top:.25rem}
+    .cta-panel{padding:clamp(1.5rem,3vw,2.25rem);border-radius:calc(var(--radius-xl) + 10px);border:1px solid var(--color-border);background:
+      linear-gradient(135deg, color-mix(in srgb,var(--color-primary-highlight) 70%, transparent), transparent 55%),
+      var(--color-surface)}
+    .contact-grid{display:grid;gap:var(--space-4);max-width:760px;margin-inline:auto}
+    .contact-links{display:grid;gap:var(--space-3)}
+    .contact-link{display:flex;align-items:center;justify-content:space-between;gap:var(--space-3);padding:var(--space-4);border:1px solid var(--color-border);border-radius:var(--radius-lg);background:var(--color-surface-2)}
+    .contact-link:hover{border-color:color-mix(in srgb,var(--color-primary) 45%, var(--color-border));transform:translateY(-1px)}
+    .contact-meta strong{display:block}
+    .contact-meta span{display:block;color:var(--color-text-muted);font-size:var(--text-sm)}
+    .site-footer{padding:var(--space-8) 0 var(--space-10);border-top:1px solid var(--color-border);color:var(--color-text-muted);font-size:var(--text-sm)}
+    .footer-inner{display:flex;justify-content:space-between;gap:var(--space-4);flex-wrap:wrap}
+    [data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+    [data-reveal].is-visible{opacity:1;transform:none}
+    [data-lang="en"]{display:none}
+    .is-en [data-lang="ru"]{display:none}
+    .is-en [data-lang="en"]{display:block}
+    .is-en span[data-lang="en"]{display:inline}
+    .is-en span[data-lang="ru"]{display:none}
+    .lightbox{position:fixed;inset:0;background:rgba(10,10,10,.92);display:none;align-items:center;justify-content:center;padding:var(--space-4);z-index:90}
+    .lightbox.open{display:flex}
+    .lightbox-dialog{width:min(100%,1100px);position:relative}
+    .lightbox img{width:100%;max-height:82vh;object-fit:contain;border-radius:var(--radius-lg)}
+    .lightbox-close{position:absolute;right:.5rem;top:.5rem;background:rgba(0,0,0,.5);color:white;border:1px solid rgba(255,255,255,.16);border-radius:var(--radius-full);width:44px;height:44px}
+    @media (min-width: 900px){
+      .nav{display:flex}
+      .hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr)}
+      .about-grid{grid-template-columns:1.15fr .85fr}
+      .details-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    }
+    @media (max-width: 899px){
+      .nav{display:none}
+      .brand-sub{display:none}
+      .hero h1{max-width:11ch}
+      .hero-note{grid-template-columns:1fr}
+    }
+    @media (prefers-reduced-motion: reduce){
+      [data-reveal]{opacity:1;transform:none;transition:none}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Aleksey Volkov home">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity=".28"/>
+            <circle cx="32" cy="32" r="17" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M32 12L37 27L52 32L37 37L32 52L27 37L12 32L27 27L32 12Z" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="32" cy="32" r="4" fill="currentColor"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">Aleksey Volkov</div>
+          <div class="brand-sub">mandala art · sacred geometry</div>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about"><span data-lang="ru">О художнике</span><span data-lang="en">About</span></a>
+        <a href="#works"><span data-lang="ru">Галерея</span><span data-lang="en">Gallery</span></a>
+        <a href="#exhibitions"><span data-lang="ru">Выставки</span><span data-lang="en">Exhibitions</span></a>
+        <a href="#contact"><span data-lang="ru">Контакты</span><span data-lang="en">Contact</span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-switch" type="button" aria-label="Switch language">
+          <span class="active" data-lang-code="ru">ru</span>
+          <span data-lang-code="en">en</span>
+        </button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div data-reveal>
+         
+          <h1>
+            <span data-lang="ru">Мандалы, сакральная геометрия и живопись в потоке</span>
+            <span data-lang="en">Mandala art, sacred geometry and painting in a trance-like flow</span>
+          </h1>
+          <p>
+            <span data-lang="ru">Я создаю эксклюзивные картины акрилом на оргалите — для частных интерьеров, личных историй и индивидуальных запросов. В моих работах соединяются декоративное искусство, медитативная практика и визуальный ритм, выросший из интереса к психологии, религиям мира и внутреннему состоянию человека.</span>
+            <span data-lang="en">I create exclusive acrylic-on-hardboard artworks for private interiors, personal stories and bespoke requests. My pieces combine decorative art, meditative practice and visual rhythm shaped by years of interest in psychology, world religions and inner states of consciousness.</span>
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact"><span data-lang="ru">Связаться / Заказать работу</span><span data-lang="en">Contact / Commission a work</span></a>
+            <a class="btn btn-secondary" href="#works"><span data-lang="ru">Смотреть галерею</span><span data-lang="en">View gallery</span></a>
+          </div>
+        </div>
+        <div class="hero-card" data-reveal>
+          <div class="hero-art">
+            <img src="img\FOto.jpg" alt="Atmospheric art studio wall with decorative artwork" width="1000" height="1500" />
+          </div>
+          <div class="hero-note">
+            <div class="hero-stat">
+              <strong>2014</strong>
+              <span><span data-lang="ru">начало пути</span><span data-lang="en">creative journey began</span></span>
+            </div>
+            <div class="hero-stat">
+              <strong>2025</strong>
+              <span><span data-lang="ru">выставка «Русский дом»</span><span data-lang="en">Russian House exhibition</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="section-head" data-reveal>
+          <div class="section-kicker"><span data-lang="ru">Обо мне</span><span data-lang="en">About me</span></div>
+          <h2 class="section-title"><span data-lang="ru">Декоративная живопись как состояние медитации</span><span data-lang="en">Decorative painting as a meditative state</span></h2>
+          <p><span data-lang="ru">С 2014 года, изучая психологию и религии мира, я познакомился с медитацией и неожиданно для себя открыл сильную тягу к декоративно-прикладному искусству. Моё музыкальное образование соединилось с новыми знаниями и дало мощный импульс для творчества.</span><span data-lang="en">Since 2014, while studying psychology and world religions, I discovered meditation and unexpectedly found a strong attraction to decorative art. My earlier musical education merged with new knowledge and opened a powerful flow of creative energy.</span></p>
+          <p><span data-lang="ru">Я работаю акрилом на оргалите и описываю процесс создания как состояние потока или транса. В моих работах часто появляются элементы сакральной геометрии, орнаментальные структуры и композиции, напоминающие мандалы.</span><span data-lang="en">I work with acrylic on hardboard and describe the process of creation as a state of flow or trance. My paintings often include sacred geometry, ornamental structures and compositions reminiscent of mandalas.</span></p>
+          <p><span data-lang="ru">Большинство работ создаются под заказ - под конкретного человека, пространство и пожелания. Поэтому каждая картина остаётся уникальной и не повторяет предыдущие произведения.</span><span data-lang="en">Most works are created by commission for a specific person, space and set of wishes. That is why each painting remains unique and never simply repeats previous pieces.</span></p>
+          
+        </div>
+        <div class="about-card" data-reveal>
+          <div class="hero-art">
+            <img src="img\IMG_3502.jpg" alt="Atmospheric art studio wall with decorative artwork" width="1000" height="1500" />
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="container">
+        <div class="gallery-intro" data-reveal>
+          <div class="section-head" style="margin-bottom:0">
+            <div class="section-kicker"><span data-lang="ru">Галерея</span><span data-lang="en">Gallery</span></div>
+    
+            <p class="section-copy"><span data-lang="ru">Здесь собраны мои избранные работы - галерея, где можно спокойно рассмотреть детали и настроение каждой картины.</span><span data-lang="en">Here are some of my selected works — a quiet, non-commercial gallery where you can take your time with the details and mood of each painting.</span></p>
+          </div>
+          
+        </div>
+        <div >
+          <figure class="gallery-item"><img src="img\foto-1.jpg" alt="Decorative artwork in an interior" width="900" height="1200"><figcaption class="gallery-caption"><strong>Shiva Revolution</strong><span><span data-lang="ru">Серия: мистический урбанизм</span><span data-lang="en">Series: mystical urbanism</span></span></figcaption></figure>
+          <figure class="gallery-item"><img src="img\1.JPG" alt="Art details with gold and blue colors" width="900" height="1300"><figcaption class="gallery-caption"><strong>Blue Guardian</strong><span><span data-lang="ru">Орнаментальная символика</span><span data-lang="en">Ornamental symbolism</span></span></figcaption></figure>
+          <figure class="gallery-item"><img src="img\IMG_2798.PNG" alt="Large circular mandala style painting" width="900" height="1200"><figcaption class="gallery-caption"><strong>Sacred Pulse</strong><span><span data-lang="ru">Мандала и сакральная геометрия</span><span data-lang="en">Mandala and sacred geometry</span></span></figcaption></figure>
+          <figure class="gallery-item"><img src="img\2.jpg" alt="Detailed patterned canvas on wall" width="900" height="1200"><figcaption class="gallery-caption"><strong>Inner Rhythm</strong><span><span data-lang="ru">Декоративная композиция</span><span data-lang="en">Decorative composition</span></span></figcaption></figure>
+          <figure class="gallery-item"><img src="img\3.jpg" alt="Pattern-based spiritual artwork" width="900" height="1300"><figcaption class="gallery-caption"><strong>Geometry of Silence</strong><span><span data-lang="ru">Медитативная структура</span><span data-lang="en">Meditative structure</span></span></figcaption></figure>
+          <figure class="gallery-item"><img src="img\4.jpg" alt="Large art canvas in warm tones" width="900" height="1200"><figcaption class="gallery-caption"><strong>Russian Ornament</strong><span><span data-lang="ru">Этнические мотивы</span><span data-lang="en">Ethnic motifs</span></span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="exhibitions">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div class="section-kicker"><span data-lang="ru">Выставки</span><span data-lang="en">Exhibitions</span></div>
+          <h2 class="section-title"><span data-lang="ru">Публичные показы</span><span data-lang="en">Public presentation</span></h2>
+          <p class="section-copy"><span data-lang="ru">Здесь я буду отмечать участие в выставках и другие важные события — раздел будет пополняться по мере появления новых работ и показов.</span><span data-lang="en">This is where I’ll note my exhibitions and other milestones — the section will grow as new works and shows come along.</span></p>
+        </div>
+        <div class="timeline" data-reveal>
+          <article class="timeline-item">
+            <span>2025 · Москва</span>
+            <h3><span data-lang="ru">Выставка «Русский дом»</span><span data-lang="en">“Russian House” exhibition</span></h3>
+            <p><span data-lang="ru">Участие в выставке современного искусства и интерьерной эстетики, где работы автора были представлены в контексте культурных и декоративных образов.</span><span data-lang="en">Participation in a contemporary art and interior aesthetics exhibition where the artist’s works were presented in a context of cultural and decorative imagery.</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="cta-panel" data-reveal>
+          <div class="section-kicker"><span data-lang="ru">Контакты</span><span data-lang="en">Contact</span></div>
+          <h2 class="section-title"><span data-lang="ru">Обсудить картину или персональный заказ</span><span data-lang="en">Discuss a painting or a personal commission</span></h2>
+          <p class="section-copy"><span data-lang="ru">Если вам близка эстетика работ Алексея Волкова, вы можете связаться напрямую через Instagram или Telegram. Формат сайта остаётся портфолио-витриной без цен, а обсуждение идей, размеров и пожеланий происходит уже в личном контакте.</span><span data-lang="en">If Aleksey Volkov’s visual language resonates with you, you can contact him directly through Instagram or Telegram. The site remains a portfolio showcase without prices, while the discussion of ideas, size and personal wishes happens in direct conversation.</span></p>
+          <div class="cta-row">
+            <a class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/art.volkov_mandala?igsh=MWZlOTF5eHlueW0wNw=="><span data-lang="ru">Написать в Instagram</span><span data-lang="en">Message on Instagram</span></a>
+            <a class="btn btn-secondary" target="_blank" rel="noopener noreferrer" href="https://t.me/Aleksey285868"><span data-lang="ru">Открыть Telegram</span><span data-lang="en">Open Telegram</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Aleksey Volkov</div>
+      <div><span data-lang="ru">Авторские интерьерные картины, мандалы и сакральная геометрия</span><span data-lang="en">Original interior paintings, mandalas and sacred geometry</span></div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+      <img src="" alt="Expanded artwork view" id="lightboxImage" />
+    </div>
+  </div>
+
+  <script>
+    const header = document.querySelector('.site-header');
+    const setHeaderHeight = () => {
+      if (header) document.documentElement.style.setProperty('--header-h', header.offsetHeight + 'px');
+    };
+    setHeaderHeight();
+    window.addEventListener('resize', setHeaderHeight);
+
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY <= 40) {
+        header.classList.remove('header-hidden');
+      } else if (currentScrollY > lastScrollY) {
+        header.classList.add('header-hidden');
+      } else if (currentScrollY < lastScrollY) {
+        header.classList.remove('header-hidden');
+      }
+      lastScrollY = currentScrollY;
+    }, { passive: true });
+
+    const root = document.documentElement;
+    const themeBtn = document.querySelector('[data-theme-toggle]');
+    let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    root.setAttribute('data-theme', theme);
+    const setThemeIcon = () => {
+      themeBtn.innerHTML = theme === 'dark'
+        ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+        : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    };
+    setThemeIcon();
+    themeBtn.addEventListener('click', () => {
+      theme = theme === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', theme);
+      setThemeIcon();
+    });
+
+    const langBtn = document.querySelector('.lang-switch');
+    let currentLang = 'ru';
+    langBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'ru' ? 'en' : 'ru';
+      document.body.classList.toggle('is-en', currentLang === 'en');
+      langBtn.querySelectorAll('span').forEach(span => span.classList.toggle('active', span.dataset.langCode === currentLang));
+      document.documentElement.lang = currentLang;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('is-visible');
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const closeBtn = document.querySelector('.lightbox-close');
+    document.querySelectorAll('.gallery-item img').forEach(img => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => {
+        lightboxImage.src = img.src;
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+      });
+    });
+    const closeLightbox = () => {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImage.src = '';
+    };
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
